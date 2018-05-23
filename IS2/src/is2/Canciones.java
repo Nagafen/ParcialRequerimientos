@@ -338,8 +338,8 @@ public class Canciones extends javax.swing.JFrame {
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
         this.setVisible(false);
-        ListaPorCanciones lista = new ListaPorCanciones();
-        lista.setVisible(true);
+        ListarTodasLasCanciones listaC = new ListarTodasLasCanciones();
+        listaC.setVisible(true);
     }//GEN-LAST:event_jPanel4MouseClicked
     
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed

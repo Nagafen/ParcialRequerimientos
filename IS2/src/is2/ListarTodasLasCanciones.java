@@ -12,12 +12,12 @@ import javax.swing.ImageIcon;
  *
  * @author Cristian
  */
-public class ListaPorAlbumes extends javax.swing.JFrame {
+public class ListarTodasLasCanciones extends javax.swing.JFrame {
 
     /**
      * Creates new form Cliente
      */
-    public ListaPorAlbumes() {
+    public ListarTodasLasCanciones() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -75,7 +75,7 @@ public class ListaPorAlbumes extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("LISTA DE ALBUMES MAS VENDIDOS");
+        jLabel2.setText("LISTA DE CANCIONES MAS VENDIDAS");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -96,13 +96,13 @@ public class ListaPorAlbumes extends javax.swing.JFrame {
         jTable1.setBackground(new java.awt.Color(176, 190, 197));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Album", "Artista/s", "Cantidad"
+                "Cancion", "Artista/s", "Album/s", "Cantidad"
             }
         ));
         jTable1.setSelectionForeground(new java.awt.Color(176, 190, 197));
@@ -239,13 +239,13 @@ public class ListaPorAlbumes extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ListaPorAlbumes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListarTodasLasCanciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ListaPorAlbumes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListarTodasLasCanciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ListaPorAlbumes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListarTodasLasCanciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ListaPorAlbumes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListarTodasLasCanciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -255,7 +255,7 @@ public class ListaPorAlbumes extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ListaPorAlbumes().setVisible(true);
+                new ListarTodasLasCanciones().setVisible(true);
             }
         });
     }

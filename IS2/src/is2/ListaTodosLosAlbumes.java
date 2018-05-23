@@ -12,12 +12,12 @@ import javax.swing.ImageIcon;
  *
  * @author Cristian
  */
-public class ListaPorCanciones extends javax.swing.JFrame {
+public class ListaTodosLosAlbumes extends javax.swing.JFrame {
 
     /**
      * Creates new form Cliente
      */
-    public ListaPorCanciones() {
+    public ListaTodosLosAlbumes() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -75,7 +75,7 @@ public class ListaPorCanciones extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("LISTA DE CANCIONES MAS VENDIDAS");
+        jLabel2.setText("LISTA DE ALBUMES MAS VENDIDOS");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -96,13 +96,13 @@ public class ListaPorCanciones extends javax.swing.JFrame {
         jTable1.setBackground(new java.awt.Color(176, 190, 197));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Cancion", "Artista/s", "Album/s", "Cantidad"
+                "Album", "Artista/s", "Cantidad"
             }
         ));
         jTable1.setSelectionForeground(new java.awt.Color(176, 190, 197));
@@ -146,7 +146,7 @@ public class ListaPorCanciones extends javax.swing.JFrame {
     jLabel7.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 11)); // NOI18N
     jLabel7.setForeground(new java.awt.Color(255, 255, 255));
     jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    jLabel7.setText("LAS MAS VENDIDAS!!!");
+    jLabel7.setText("LOS MAS VENDIDOS");
 
     javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
     jPanel1.setLayout(jPanel1Layout);
@@ -218,8 +218,8 @@ public class ListaPorCanciones extends javax.swing.JFrame {
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         this.setVisible(false);
-        Canciones can = new Canciones();
-        can.setVisible(true);
+        Albumes al = new Albumes();
+        al.setVisible(true);
     }//GEN-LAST:event_jLabel5MouseClicked
 
     /**
@@ -239,21 +239,27 @@ public class ListaPorCanciones extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ListaPorCanciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListaTodosLosAlbumes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ListaPorCanciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListaTodosLosAlbumes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ListaPorCanciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListaTodosLosAlbumes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ListaPorCanciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListaTodosLosAlbumes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ListaPorCanciones().setVisible(true);
+                new ListaTodosLosAlbumes().setVisible(true);
             }
         });
     }
